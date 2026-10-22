@@ -18,7 +18,7 @@
 - قفل الجهاز يستعمل نفس خدمة Google Apps Script الخاصة بمواقع الكيمياء والفيزياء والأحياء.
 
 ## ملفات المصدر (للمطوّر)
-- `dev/source.tgz.enc`: ملفات المصدر مشفّرة، وكلمة سر فك التشفير = كلمة سر حساب `baron` الأولى.
+- `dev/source.tgz.enc`: ملفات المصدر مشفّرة، وكلمة سر فك التشفير = كلمة سر حساب `baron` الحالية (لتغييرها: `node chpw.mjs baron كلمة_جديدة` ثم assemble وإعادة تشفير المصدر).
 
 ```bash
 openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in dev/source.tgz.enc -out source.tgz
